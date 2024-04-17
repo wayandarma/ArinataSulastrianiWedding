@@ -8,7 +8,9 @@ export default function Comment() {
 
   const fetchComments = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/api/comments");
+      const response = await axios.get(
+        "https://arinata-sulastriani-wedding-rlu2.vercel.app/api/comments"
+      );
       setComments(response.data);
     } catch (error) {
       console.error("Error fetching comments:", error);
