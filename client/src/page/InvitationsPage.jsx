@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import flowerSVG from "../assets/elements/flower.svg";
+import heroIMage from "../assets/images/hero-image.jpeg";
+import image4 from "../assets/images/image-4.jpeg";
 export default function InvitationsPage() {
   return (
-    <section className="bg-[url('./src/assets/images/image-1.jpeg')] h-screen bg-cover bg-center flex justify-center items-center">
+    <section className=" h-screen bg-cover bg-center flex justify-center items-center">
+      <img
+        src={heroIMage}
+        alt=""
+        className="absolute w-full h-screen object-cover"
+      />
       <div className="relative bg-[rgb(255,246,239)] py-4 w-[302px] h-[502px] rounded-[14px] border-4 border-[#3D634C] flex items-center flex-col gap-1">
         <img
           src={flowerSVG}
@@ -11,7 +18,7 @@ export default function InvitationsPage() {
         />
         <img
           className="w-[194px] h-[194px] rounded-full border border-white object-cover z-10"
-          src="./src/assets/images/image-4.jpeg"
+          src={image4}
         />
         <div className="text-center">
           <p className="text-black text-base font-normal font-['Raleway'] uppercase tracking-[2.56px]">

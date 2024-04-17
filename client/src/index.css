@@ -608,6 +608,10 @@ video {
   inset: 0px;
 }
 
+.-bottom-9 {
+  bottom: -2.25rem;
+}
+
 .-top-32 {
   top: -8rem;
 }
@@ -618,10 +622,6 @@ video {
 
 .right-4 {
   right: 1rem;
-}
-
-.-bottom-9 {
-  bottom: -2.25rem;
 }
 
 .z-10 {
@@ -762,6 +762,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -772,10 +776,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-x-5 {
@@ -842,6 +842,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#3D634C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 99 76 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#fef0ed\] {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 237 / var(--tw-bg-opacity));
@@ -867,17 +872,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#3D634C\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(61 99 76 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
-}
-
-.bg-\[url\(\'\.\/src\/assets\/images\/image-1\.jpeg\'\)\] {
-  background-image: url('./src/assets/images/image-1.jpeg');
 }
 
 .bg-heroImage {
@@ -895,6 +891,11 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-4 {
@@ -952,6 +953,10 @@ video {
   text-align: center;
 }
 
+.font-Lavishly {
+  font-family: Lavishly Yours;
+}
+
 .font-\[\'Raleway\'\] {
   font-family: 'Raleway';
 }
@@ -962,10 +967,6 @@ video {
 
 .font-popins {
   font-family: Poppins, sans-serif, sans;
-}
-
-.font-Lavishly {
-  font-family: Lavishly Yours;
 }
 
 .text-2xl {
@@ -1078,14 +1079,14 @@ video {
   color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-orange-50 {
   --tw-text-opacity: 1;
   color: rgb(255 247 237 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
