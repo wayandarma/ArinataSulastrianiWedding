@@ -17,7 +17,10 @@ export default function CommentForm({ fetchComment }) {
     };
     setLoading(true);
     axios
-      .post("http://localhost:4000/api/comments", data)
+      .post(
+        "https://arinata-sulastriani-wedding-rlu2.vercel.app/api/comments",
+        data
+      )
       .then(() => {
         setLoading(false);
         setName("");
