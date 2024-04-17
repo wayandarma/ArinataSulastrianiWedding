@@ -42,12 +42,12 @@ export default function HomePage() {
       {/* Hero section start */}
       <section
         id="hero-section "
-        className="h-heroHeight bg-center md:bg-cover  relative"
+        className="h-heroHeight bg-center w-full relative"
       >
         <img
           src={heroImage}
           alt=""
-          className="absolute -z-40 h-full object-cover"
+          className="absolute -z-40 h-full object-cover w-full"
         />
         <CountdownTimer targetDate={targetDate} />
         {/* Music title */}
