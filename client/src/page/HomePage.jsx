@@ -21,7 +21,13 @@ import Comment from "../components/Comment";
 export default function HomePage() {
   const targetDate = new Date("2024-05-18T00:00:00"); // Set your target date here
   const audioRef = useRef(null);
-
+  const defaultProps = {
+    center: {
+      lat: 37.7749,
+      lng: -122.4194,
+    },
+    zoom: 11,
+  };
   const handlePlayPause = () => {
     if (audioRef.current.paused) {
       audioRef.current.play();
@@ -116,9 +122,30 @@ export default function HomePage() {
             <h1 className="text-4xl font-medium relative before:content-[''] before:absolute before:h-2 before:w-[327px] before:top-10 before:left-0 before:bg-brown">
               We Get Married
             </h1>
-            <p className=" mt-8 font-extralight">
-              Kita akan melaksankan pernikahan di tanggal ini
-            </p>
+            <div className="mt-8 flex gap-2 flex-col">
+              <p className="font-light">
+                Pernikahan adalah penyatuan dua jiwa yang telah ditakdirkan
+                berpasangan. Melalui ritual suci ini, pikiran, perasaan, dan
+                perkataan kita akan melebur menjadi satu dalam ikatan cinta
+                kasih yang diberkahi Tuhan. Masa-masa indah yang telah kita
+                lalui bersama, dari bangku sekolah hingga kini, akan menuntun
+                kita menuju kedewasaan dalam mengarungi bahtera rumah tangga.
+              </p>
+              <p className="font-light">
+                Pada tanggal 17 Mei 2024 yang akan datang, kami memutuskan untuk
+                mengikrarkan janji suci pernikahan di hadapan Tuhan dan para
+                saksi. Kami mohon doa restu dari Bapak/Ibu/teman-teman sekalian,
+                agar acara sakral yang akan kami gelar ini dapat berlangsung
+                dengan lancar dan khidmat. Semoga cinta kami dapat terus
+                bertumbuh, saling mengisi dan melengkapi, namun tetap memberi
+                ruang bagi masing-masing untuk berkembang. Bersama dalam suka
+                maupun duka, dalam untung maupun malang, hingga maut memisahkan.
+              </p>
+              <p className="font-light">
+                Terima kasih atas doa dan restu dari semuanya. Salam hangat dari
+                kami berdua, calon mempelai yang berbahagia.
+              </p>
+            </div>
           </div>
           <div>
             <img src={image_1} alt="" className="rounded-2xl shadow-xl" />
@@ -131,21 +158,6 @@ export default function HomePage() {
           </div>
           <div>
             <img src={image_3} alt="" className="rounded-2xl shadow-xl" />
-          </div>
-          <div>
-            <h3 className="text-[15px] font-normal ">Lets Join with us for</h3>
-            <h1 className="text-4xl font-medium relative before:content-[''] before:absolute before:h-2 before:w-[327px] before:top-10 before:left-0 before:bg-brown">
-              The Celeberations
-            </h1>
-            <p className=" mt-8 font-extralight">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-              consequuntur accusantium iusto culpa adipisci tempore maxime
-              eveniet repellat, asperiores enim quae, reiciendis eum quis
-              excepturi. Reiciendis doloribus architecto necessitatibus.
-              Deleniti, repellendus. Consequatur porro unde voluptate velit,
-              accusantium cupiditate, in est repudiandae possimus laboriosam
-              magnam recusandae id architecto praesentium aperiam inventore?
-            </p>
           </div>
         </div>
       </section>

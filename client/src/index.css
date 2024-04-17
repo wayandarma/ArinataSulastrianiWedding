@@ -981,6 +981,10 @@ video {
   font-family: Poppins, sans-serif, sans;
 }
 
+.font-playFair {
+  font-family: Playfair Display;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
