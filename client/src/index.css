@@ -632,6 +632,10 @@ video {
   z-index: 50;
 }
 
+.-z-40 {
+  z-index: -40;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -694,6 +698,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-\[183px\] {
@@ -947,6 +955,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {

@@ -44,7 +44,7 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex container justify-center items-center text-white gap-10">
+    <div className="flex container justify-center items-center text-white gap-10 pt-4 px-4">
       <div>
         <FlipNumbers
           play

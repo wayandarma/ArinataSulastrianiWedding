@@ -3,6 +3,7 @@ import image_1 from "../assets/images/image-1.jpeg";
 import image_3 from "../assets/images/image-3.jpeg";
 import image_4 from "../assets/images/image-4.jpeg";
 import image_5 from "../assets/images/image-5.jpeg";
+import heroImage from "../assets/images/hero-image.jpeg";
 import loveIcon from "../assets/icons/love.svg";
 
 import music from "../assets/music/still_the_one.mp3";
@@ -15,8 +16,6 @@ import CountdownTimer from "../components/CountDownTimer";
 import { useRef } from "react";
 import WeddingCoupleCard from "../components/WeddingCoupleCard";
 import EventSchedule from "../components/EventSchedule";
-import CommentForm from "../components/CommentForm";
-import CommentList from "../components/CommentList";
 import Comment from "../components/Comment";
 
 export default function HomePage() {
@@ -35,7 +34,7 @@ export default function HomePage() {
     <div className="overflow-x-hidden">
       {/* Button for togle play and pause audio */}
       <button
-        className="fixed right-4 bottom-4 text-white p-4 bg-brown rounded-full shadow-2xl"
+        className="fixed right-4 bottom-4 text-white p-4 bg-brown rounded-full shadow-2xl z-50"
         onClick={handlePlayPause}
       >
         <FaMusic />
@@ -43,8 +42,13 @@ export default function HomePage() {
       {/* Hero section start */}
       <section
         id="hero-section "
-        className="h-heroHeight bg-heroImage bg-center md:bg-cover py-4"
+        className="h-heroHeight bg-center md:bg-cover  relative"
       >
+        <img
+          src={heroImage}
+          alt=""
+          className="absolute -z-40 h-full object-cover"
+        />
         <CountdownTimer targetDate={targetDate} />
         {/* Music title */}
         <div className="flex justify-center gap-4 text-white font-popins font-thin mt-10 animate-pulse">
