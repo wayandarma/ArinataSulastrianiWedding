@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import flowerSVG from "../assets/elements/flower.svg";
 import heroIMage from "../assets/images/hero-image.jpeg";
 import image4 from "../assets/images/image-4.jpeg";
 export default function InvitationsPage() {
+  const [searchParams] = useSearchParams();
+  console.log(searchParams);
   return (
     <section className=" h-screen bg-cover bg-center flex justify-center items-center">
       <img
@@ -35,6 +38,7 @@ export default function InvitationsPage() {
         <p className="text-black text-sm font-normal font-['Raleway'] uppercase tracking-widest">
           17 / 05 / 2024
         </p>
+
         <Link
           to={"/home"}
           className="text-orange-50 text-base font-normal font-['Raleway'] uppercase tracking-widest absolute -bottom-9 bg-[#3D634C] border-white border-2 px-4 py-2"

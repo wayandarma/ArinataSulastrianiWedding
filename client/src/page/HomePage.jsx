@@ -21,13 +21,7 @@ import Comment from "../components/Comment";
 export default function HomePage() {
   const targetDate = new Date("2024-05-18T00:00:00"); // Set your target date here
   const audioRef = useRef(null);
-  const defaultProps = {
-    center: {
-      lat: 37.7749,
-      lng: -122.4194,
-    },
-    zoom: 11,
-  };
+
   const handlePlayPause = () => {
     if (audioRef.current.paused) {
       audioRef.current.play();
@@ -87,7 +81,7 @@ export default function HomePage() {
             href="https://maps.app.goo.gl/cohmQ2YVEUSsbGSS8"
             className="flex items-center justify-center gap-2 px-8 py-4  rounded-xl font-light bg-brown border-white border-2"
           >
-            <FaMapMarkedAlt /> <span>Br Pakudansih, Muncan</span>
+            <FaMapMarkedAlt /> <span>Check Lokasi</span>
           </a>
         </div>
       </section>
